@@ -1,0 +1,138 @@
+@import "reset.css";
+
+
+/* heading */
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@600&display=swap');
+/*body*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Shippori+Mincho:wght@600&display=swap');
+
+/*nav csss done ver1*/
+*{
+  margin: 0;
+  padding-top: 0;
+}
+body{
+  font-family: "Open Sans";
+  font-style: light;
+  font-weight: 300;
+  font-display: swap;
+}
+/*icon img*/
+img{
+  max-width: 100%;
+  height: auto;
+}
+nav{
+  background-color: white;
+  margin: 15px 15px 15px;
+}
+nav p{ 
+  font-family: 'Shippori Mincho B1';
+  color: black;
+  font-size: 24px;
+  line-height: 55px;
+  float: left;
+  padding: 0px 20px;
+  margin: 0px 15px 0px;
+
+ }
+ nav ul{
+  float: right;
+ }
+ nav ul li {
+  float:left;
+  list-style:none ;
+  position: relative;
+ }
+nav ul li a {
+  display: block;
+  font-family: 'Shippori Mincho B1', serif;
+  color: black;
+  font-size: 24px;
+    padding: 24px 14px;
+    text-decoration: none;
+}
+nav ul li ul {
+  display: none;
+  position: absolute;
+  background-color: white;
+  padding: 10px;
+  border-radius: 0px 0px 13px 13px; 
+}
+nav ul li:hover ul {
+  display: block;
+}
+nav ul li ul li {
+  width: 100px;
+  border-radius:  13px; 
+}
+nav ul li ul li a img{
+  padding: 8px 14px;
+}
+nav ul li ul li a:hover {
+  background-color: #f3f3f3;
+}
+/*footer ver,1 css*/
+.footer-container{
+  display: flex;
+  flex-direction: row;
+  flex:auto;
+}
+.footer-row1{
+  display: inline-block;
+  flex: 1;
+  padding: 5px;
+}
+.footer-row2{
+  display: inline-block;
+  flex: 1;
+  padding: 5px;
+}
+.footer-row3{
+  display: block;
+  font-family: 'Shippori Mincho B1', serif;
+  color: black;
+  font-size: 24px;
+  padding: 24px 14px;
+}
+/*footer link change color and style ver1*/
+footer il:hover {
+  color: black;
+}
+.footer-row4{
+  display: block;
+  font-family: 'Shippori Mincho B1', serif;
+  color: black;
+  font-size: 24px;
+  padding: 24px 14px;
+}
+
+/*top row image setting done do not touch!!!!!!!!!!!!*/
+.responsive{
+  width: 100%;
+  height: auto;
+}
+
+/*content article done*/
+
+.churchill-house-header{
+  display: block;
+}
+
+article{
+  padding: 10px;
+  border: 5px solid gray;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+h1{
+  font-weight: 400;
+    line-height: 100%;
+    margin: 0 0 45px;
+}
+p{
+  margin: 0 0 10px;
+  margin-bottom: 30px;
+}
+
+
