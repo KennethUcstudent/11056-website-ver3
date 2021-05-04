@@ -4,56 +4,65 @@
      <head>
         <title>Home page</title>
         <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-<!--Ed1 nav setting good but the -->
-<nav>
-    <img src="assets/images/churchill-house-icon.png" alt="icon" width="150px">
-        <ul>
-            <li><a href="homepage.html">Home</a></li>
-            <li><a href="#">Churchill House</a>
-            <ul>
-            <li><a href="Churchillhouse.html">Intro</a></li>
-            <li><a href="#">History</a></li>
-            <li><a href="#">Facilty</a></li>
-        </ul>
-            </li>
-            <li><a href="#">Robin Boyd</a>
-            <ul>
-                <li><a href="#">About Robin Boyd</a></li>
-                <li><a href="#">History of Robin Boyd</a></li>
-            </li>
-        </ul>
-</nav>
+<!--ver2 nav-->
+        <div class="dropdown">
+            <nav>
+                <img class="logo" src="assets/images/churchill-house-icon.png">
+                <ul>
+                    <li><a href="homepage.html">Home</a></li>
+                    <li><a href="#">Churchill House</a>
+                        <ul>
+                            <li><a href="Churchillhouse.html">Intro</a></li>
+                            <li><a href="History.html">History</a></li>
+                            <li><a href="#">Facilty</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Robin Boyd</a>
+                        <ul>
+                            <li><a href="#">About Robin Boyd</a></li>
+                            <li><a href="#">History of Robin Boyd</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
 <!--image row-->    
             <div class="row">
                 <div class="column">
                     <img src="assets/images/churchill-house-14.jpg">      
-                </div><div class="column2">
+                </div>
+                <div class="column">
                     <img src="assets/images/extra2-robin boyd portrait-copyright-Mark-Strizic.jpg">
                 </div>
             </div>
-<!--footer ver 1-->
+<!--footer ver 2-->
 <footer class="footer-container">
     <div class="footer-row1">
-            <img src="assets/images/churchill-house-icon.png" >
+            <img src="assets/images/churchill-house-icon.png" alt="icon">
     </div>
-    <div class="footer-row2">
     </div>
     <div class="footer-row3">Churchill House & All Facilty
             <ul>
                 <li><a href="homepage.html">Homepage</a></li>
                 <li><a href="Churchillhouse.html">Background of Churchill house</a></li>
+                <li><a href="History.html">History of Churchill house</a></li>
                 <li><a href="#">Main Building</a></li>
                 <li><a href="#">North Wing</a></li>
             </ul>
     </div>
     <div class="footer-row4">Robin Boyd
             <ul>
+                <li><a href="#">History of Robin Boyd</a>
                 <li><a href="#">Background of Robin Boyd</a>
                 </li>
             </ul>
     </div>
 </footer>
+<div class="footer-text">
+    <p> This website was produced by students in the Faculty of Arts & Design, University of Canberra, 2021.</p>
+</div>
   </body>
 </html>
