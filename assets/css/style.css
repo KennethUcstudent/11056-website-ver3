@@ -67,14 +67,22 @@ nav ul ul li{
   display: list-item;
   position: relative;
 }
+@media screen and (max-width: 700px){
+  .dropdown {
+  flex-direction: column;
+  background-color: white;
+  display: table-row;
+  }
+  }
 /*footer ver,1 css*/
-.icon{
-  width: "200px"
-}
+
 .footer-container{
+  height: 250px;
+  width: 100%;
   display: flex;
   flex-direction: row;
   flex:auto;
+  background-color: orange;
 }
 .footer-row1{
   display: inline-block;
@@ -82,60 +90,97 @@ nav ul ul li{
   padding: 5px;
 }
 .footer-row1 img{
-  object-fit: contain;
+  width: 150px;
+  background-color: white;
+  padding: 2px 4px 2px 4px;
 }
 .footer-row3{
+  text-decoration-line: none;
   display: block;
   color: black;
-  font-size: 24px;
-  padding: 20px 14px;
+  font-size: 14px;
+  padding: 24px 14px;
 }
+a{
+  text-decoration: none;
+  color: white;
+  text-decoration-line: none;
+  line-height: 1.6;
+  }
+
 /*footer link change color and style ver1*/
 footer a{
-  color: orange;
+  color: black;
   text-decoration: none;
-  font-size: 14px;
 }
 
 .footer-row4{
+  text-decoration-line: none;
   display: block;
-  /* font-family: 'Shippori Mincho B1', serif; */
   color: black;
-  font-size: 24px;
+  font-size: 14px;
   padding: 24px 14px;
-}
-/*image row the image did not line up*/
-.row{
-  width: 100%;
-}
-.column{
-  float: left;
-  width: 50%;
-}
-.column img{
-  width: 100%;
-}
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
 }
 .footer-text{
   font-size: 14px;
-  float:right;
   color: red;
   padding: 0px 10px 0px 10px;
 }
-/* @media (max-width: 600px) {
-  .column {
-    width: 100%;
+@media screen and (max-width: 700px){
+  .footer-container, .footer {
+  flex-direction: column;
+  background-color: orange;
+  display: table-row;
   }
-} */
-/*top row image setting done do not touch!!!!!!!!!!!!*/
-.responsive{
+  }
+/*home page image row the image*/
+* {
+  box-sizing: border-box;
+}
+
+.columnho {
+  float: left;
+  width: 50%;
+}
+.columnho img{
+  width:100%; 
+  height:900px;
+  object-fit: cover;
+}
+.columnho1 {
+  float: right;
+  width: 50%;
+}
+.columnho1 img{
+  width:100%; 
+  height:900px;
+  object-fit: cover;
+}
+.rowho{
+  display: table;
+  width: 100%;
+}
+@media screen and (max-width: 700px){
+  .columnho, .columnho1{
   width: 100%;
   height: auto;
+  }
+  }
+/*facility history*/
+
+.responsive{
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
 }
+
+@media screen and (max-width: 700px){
+  .responsive{
+  width: 100%;
+  height: auto;
+  }
+  }
+
 /*content article done*/
 .churchill-house-header{
   display: block;
@@ -143,40 +188,43 @@ footer a{
 article{
   padding: 10px;
   border: 5px solid gray;
-  margin-left: 20%;
-  margin-right: 20%;
+  margin: 60px 80px 60px 80px;
+  line-height: 1.8;
 }
 h1{
   font-weight: 400;
-    line-height: 100%;
-    margin: 0 0 45px;
+  line-height: 100%;
+  margin: 0 0 15px;
 }
-/* p{
-  margin: 0 0 10px;
-  margin-bottom: 30px;
-} */
-@media screen and (max-width: 700px){
-.footer-container{
-flex-direction: column;
-background-color: whitesmoke;
+h2{
+  color: rgb(58, 58, 58);
 }
+.content-content{
+  line-height: 1.6;
+  text-size-adjust: 17px;
+  margin-top: 10px;
 }
-/* create a image and text cover on top of it */
-.head-history{
-  position: relative;
-  text-align: center;
+.dot{
+  margin-top: 20px;
+  margin-left: 60px;
+}
+
+/* facilty img blog */
+.faciltyimg{
+  box-sizing: inherit;
+  min-height: 100px;
 }
 .top-left {
   position: absolute;
-  top: 40px;
+  top: 90px;
   left: 40px;
   font-family: helvetica;
   width: 30%;
   background-color: white;
   font-size: 60px;
 }
-.window{
-  width: 100%;
+.top-left p{
+  margin-left: 10px;
 }
 @media (max-width: 870px) {
   .top-left {
@@ -199,9 +247,171 @@ background-color: whitesmoke;
   display: table;
   clear: both;
 } 
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+/* Responsive layout */
 @media screen and (max-width:600px) {
   .column1 {
+    width: 100%;
+  }
+}
+/* History*/
+.containerhis{
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  line-height: 1.8;
+  background-color: rgb(214, 214, 214);
+}
+.box{
+  padding: 10px 70px 70px 70px;
+}
+
+/* facilty */
+
+.blog{
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  width: 60%;
+  padding: 10px;
+  line-height: 1.8;
+}
+@media screen and (max-width:1000px) {
+  .blog{
+    margin-top: 50px;
+    margin-left: none;
+    margin-right: none;
+    margin-bottom: 50px;
+    padding: 10px;
+    line-height: 1.8;
+    width: 100%;
+    flex-direction: column;
+  }
+}
+div.gallery {
+  border: 1px solid #ccc;
+  line-height: 1.8;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+div.desc {
+  padding: 15px;
+  text-align: left;
+  line-height: 1.8;
+  font-size: 16px;
+}
+.responsiveimg {
+  padding: 0 13px;
+  width: 100%;
+  line-height: 1.8;
+}
+
+/* 1image and text row */
+.container {
+  display: flex;
+  background: orange;
+}
+.container_img{
+  object-fit: contain;
+  float: left;
+  width: 500px;
+  min-height: fit-content;
+}
+.container_text{
+  margin:20px 50px 20px 50px;
+  line-height: 1.8;
+  flex: content;
+
+}
+@media screen and (max-width:1000px){
+  .container {
+    object-fit: none;
+    display: contents;
+    width: auto;
+  }
+}
+@media screen and (max-width:1000px){
+  .container_img {
+    width: 100%;
+    min-height: max-content;
+  }
+}
+@media screen and (max-width:1008px){
+  .container_text {
+    width: 60%;
+  }
+}
+/* histoy churchillhouse */
+.center {
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  width: 60%;
+  border: 3px solid #000000;
+  padding: 10px;
+  line-height: 1.8;
+}
+.center p{
+  margin-top: 20px;
+}
+/* Create two equal columns that floats next to each other */
+* {
+  box-sizing: border-box;
+}
+.columnr {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  min-height: 260px;
+  max-height: 260px;
+  background-color: rgb(250, 142, 1);
+}
+.columnr h2 {
+  margin: 10px 10px 10px 10px;
+  line-height: 1.8;
+}
+.columnr li {
+  margin: 10px 10px 10px 4px;
+}
+.columnl {
+  float: right;
+  width: 50%;
+  padding: 10px;
+  min-height: 260px;
+  max-height: 260px;
+  background-color: rgb(255, 175, 83);
+}
+.columnl h2 {
+  margin: 10px 10px 10px 10px;
+  line-height: 1.8;
+}
+.columnl li {
+  margin: 10px 10px 10px 4px;
+}
+/* Clear floats after the columns */
+.rowr:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width:1008px){
+  .columnr {
+    width: 100%;
+  }
+}
+@media screen and (max-width:1008px){
+  .columnl {
     width: 100%;
   }
 }
